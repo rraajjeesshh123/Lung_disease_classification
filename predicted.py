@@ -9,7 +9,7 @@ from sklearn import preprocessing
 def calculate_accuracy(predictions):
     return np.max(predictions, axis=1) * 100
 
-folder = r"C:\Users\Priyanshi Jain\Documents\images"
+folder = "------path of the extracted folder------"
 
 photos = []
 for filename in os.listdir(folder):
@@ -19,7 +19,7 @@ for filename in os.listdir(folder):
 
 X = np.asarray(photos, dtype='uint8')
 
-model = load_model(r"C:\Users\Priyanshi Jain\Documents\GitHub\Rajeshh\developed_model.h5")
+model = load_model(r"developed_model.h5")
 yhats2 = model.predict(X)
 
 max_predictions = (yhats2 == yhats2.max(axis=1, keepdims=1)).astype(int)
