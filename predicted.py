@@ -19,7 +19,7 @@ for filename in os.listdir(folder):
 
 X = np.asarray(photos, dtype='uint8')
 
-model = load_model(r"developed_model.h5")
+model = load_model("developed_model.h5")
 yhats2 = model.predict(X)
 
 max_predictions = (yhats2 == yhats2.max(axis=1, keepdims=1)).astype(int)
