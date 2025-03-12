@@ -26,7 +26,7 @@ The files contained in this repository are as follows:
 * Folder named ``images``: Folder where the chest X-ray images to be classified should be saved
 * Folder named ``trainig_codes``:Contains the code for baseline and VGG19 models used for training
 * ``baseline_model.py``: Contains the code for the baseline CNN model
-* ``vgg19_model.py``: ontains the code for the VGG19 CNN model
+* ``vgg19_model.py``: Contains the code for the VGG19 CNN model
 
 
 ## Usage:
